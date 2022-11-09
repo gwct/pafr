@@ -198,7 +198,7 @@ dotplot <- function(ali, order_by = c("size", "qstart", "provided"),
                 len = seq_maps[[map_n + 1]] 
       )
   }
-  p
+  list(p, ali)
 }
 
 highlight_dotplot <- function(bed, query=TRUE, ...){
